@@ -1,6 +1,6 @@
 import { animalFull } from '../models/animalFull.dto';
 import { API_CONFIG } from './../config/api.config';
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { animalNew } from '../models/animalNew.dto';
@@ -9,7 +9,11 @@ import { animal } from '../models/animal.dto';
 @Injectable({
   providedIn: 'root'
 })
-export class AnimalServiceService {
+export class AnimalServiceService implements OnInit{
+
+  ngOnInit(){
+    this.getAnimais();
+  }
 
   constructor(private http: HttpClient) { }
 
