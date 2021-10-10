@@ -1,3 +1,4 @@
+import { AnimalServiceService } from './services/animal-service.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,7 +13,9 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    AnimalServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
