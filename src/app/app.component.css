@@ -1,0 +1,40 @@
+.header{
+  background: #fff;
+  width: 100%;
+}
+.logo-text{
+  text-transform: uppercase;
+  background-color: #63c6ae;
+  font-size: 24px;
+  margin: 0;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  float:left;
+  text-align: right;
+}
+.header__nav{
+}
+.header__nav ul{
+  margin: 0;
+  padding: 0;
+}
+.header__nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #586165;
+  font-size: 14px;
+  font-weight: 100px;
+  display: inline-block;
+  transition: .4s ease;
+}
+.header__nav a:hover{
+  color: #63c6ae;
+}
+.header__nav li{
+  list-style-type: none;
+  background: #242c2c;
+  text-align: center;
+}
